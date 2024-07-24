@@ -10,7 +10,7 @@ os.environ["WANDB_DISABLED"] = "true"
 
 dataset = load_dataset("yitingxie/rlhf-reward-datasets")
 
-access_token = "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"
+access_token = ""
 model_name = r"C:\Users\philmarq\source\repos\llm\gpt2mediumsft\checkpoint-28000"
 model = AutoModelForCausalLM.from_pretrained(model_name, use_cache=False)  # Disable caching
 model.gradient_checkpointing_enable()  # Enable gradient checkpointing
